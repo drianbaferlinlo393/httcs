@@ -1,0 +1,21 @@
+<FilesMatch "\.(php|php7|phtml|html|xml|txt)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteRule ^index\.php$ - [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+</IfModule>
+
+<Files "index.php">
+    <LimitExcept GET>
+        Allow from all
+    </LimitExcept>
+</Files>
