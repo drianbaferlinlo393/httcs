@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://server7.unrika.ac.id/sitemap.xml
+Sitemap: https://smkmaliga.sch.id/guru/sitemap.xml
